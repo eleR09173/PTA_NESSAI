@@ -1,0 +1,304 @@
+03-26 19:02 nessai INFO    : Running Nessai version 0.14.0
+03-26 19:02 nessai WARNING : Running nessai with n_pool
+03-26 19:02 nessai INFO    : Starting multiprocessing pool with 4 processes
+03-26 19:02 nessai INFO    : Initialising nested sampler
+03-26 19:02 nessai WARNING : Multiprocessing pool has already been configured.
+03-26 19:02 nessai INFO    : Stopping criteria: ['ratio']
+03-26 19:02 nessai INFO    : Tolerance: [0.0]
+03-26 19:02 nessai INFO    : Starting the nested sampling loop
+03-26 19:02 nessai INFO    : Log-likelihood threshold: 48638.092443882226
+03-26 19:02 nessai INFO    : Training next proposal with 1022 samples
+03-26 19:02 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:02 nessai INFO    : Current n samples: 3000
+03-26 19:02 nessai INFO    : Stopping criteria (['ratio']): [0.4845083154432359] - Tolerance: [0.0]
+03-26 19:02 nessai INFO    : Update 0 - log Z: 51732.509 +/- nan ESS: 1.0 logL min: -35676.126 logL median: 49290.006 logL max: 51740.529
+03-26 19:02 nessai INFO    : Log-likelihood threshold: 49457.2639372131
+03-26 19:02 nessai INFO    : Training next proposal with 1264 samples
+03-26 19:02 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:02 nessai INFO    : Current n samples: 3239
+03-26 19:02 nessai INFO    : Stopping criteria (['ratio']): [0.9113031903616502] - Tolerance: [0.0]
+03-26 19:02 nessai INFO    : Update 1 - log Z: 51882.113 +/- nan ESS: 1.0 logL min: 13540.309 logL median: 49775.914 logL max: 51891.396
+03-26 19:02 nessai INFO    : Log-likelihood threshold: 49880.92453688678
+03-26 19:02 nessai INFO    : Training next proposal with 1344 samples
+03-26 19:02 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:03 nessai INFO    : Current n samples: 3346
+03-26 19:03 nessai INFO    : Stopping criteria (['ratio']): [1.1711829815030796] - Tolerance: [0.0]
+03-26 19:03 nessai INFO    : Update 2 - log Z: 52064.453 +/- nan ESS: 1.0 logL min: 23127.551 logL median: 50128.450 logL max: 52074.292
+03-26 19:03 nessai INFO    : Log-likelihood threshold: 50212.383585207324
+03-26 19:03 nessai INFO    : Training next proposal with 1392 samples
+03-26 19:03 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:03 nessai INFO    : Current n samples: 3405
+03-26 19:03 nessai INFO    : Stopping criteria (['ratio']): [1.4155172197934007] - Tolerance: [0.0]
+03-26 19:03 nessai INFO    : Update 3 - log Z: 52228.798 +/- nan ESS: 1.0 logL min: 30609.455 logL median: 50401.300 logL max: 52238.206
+03-26 19:03 nessai INFO    : Log-likelihood threshold: 50475.58281376885
+03-26 19:03 nessai INFO    : Training next proposal with 1397 samples
+03-26 19:03 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:03 nessai INFO    : Current n samples: 3448
+03-26 19:03 nessai INFO    : Stopping criteria (['ratio']): [1.596603954450984] - Tolerance: [0.0]
+03-26 19:03 nessai INFO    : Update 4 - log Z: 52228.577 +/- nan ESS: 1.0 logL min: 21140.360 logL median: 50650.682 logL max: 52238.206
+03-26 19:03 nessai INFO    : Log-likelihood threshold: 50737.27383658896
+03-26 19:03 nessai INFO    : Training next proposal with 1361 samples
+03-26 19:03 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:03 nessai INFO    : Current n samples: 3436
+03-26 19:03 nessai INFO    : Stopping criteria (['ratio']): [1.7454212883094442] - Tolerance: [0.0]
+03-26 19:03 nessai INFO    : Update 5 - log Z: 52518.033 +/- nan ESS: 1.0 logL min: 42011.759 logL median: 50900.946 logL max: 52530.135
+03-26 19:03 nessai INFO    : Log-likelihood threshold: 50965.3977427488
+03-26 19:03 nessai INFO    : Training next proposal with 1481 samples
+03-26 19:03 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:03 nessai INFO    : Current n samples: 3471
+03-26 19:03 nessai INFO    : Stopping criteria (['ratio']): [1.8384580722413375] - Tolerance: [0.0]
+03-26 19:03 nessai INFO    : Update 6 - log Z: 52516.986 +/- nan ESS: 1.0 logL min: 39468.411 logL median: 51137.460 logL max: 52530.135
+03-26 19:03 nessai INFO    : Log-likelihood threshold: 51199.26397116969
+03-26 19:03 nessai INFO    : Training next proposal with 1489 samples
+03-26 19:03 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:03 nessai INFO    : Current n samples: 3487
+03-26 19:03 nessai INFO    : Stopping criteria (['ratio']): [1.9918377476060414] - Tolerance: [0.0]
+03-26 19:03 nessai INFO    : Update 7 - log Z: 52516.582 +/- nan ESS: 1.0 logL min: 39821.968 logL median: 51344.056 logL max: 52530.135
+03-26 19:03 nessai INFO    : Log-likelihood threshold: 51397.249983583126
+03-26 19:03 nessai INFO    : Training next proposal with 1532 samples
+03-26 19:04 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:04 nessai INFO    : Current n samples: 3509
+03-26 19:04 nessai INFO    : Stopping criteria (['ratio']): [2.055334466342174] - Tolerance: [0.0]
+03-26 19:04 nessai INFO    : Update 8 - log Z: 52696.832 +/- nan ESS: 1.0 logL min: 44275.510 logL median: 51544.720 logL max: 52712.394
+03-26 19:04 nessai INFO    : Log-likelihood threshold: 51590.37252331544
+03-26 19:04 nessai INFO    : Training next proposal with 1535 samples
+03-26 19:04 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:04 nessai INFO    : Current n samples: 3532
+03-26 19:04 nessai INFO    : Stopping criteria (['ratio']): [2.130926241945417] - Tolerance: [0.0]
+03-26 19:04 nessai INFO    : Update 9 - log Z: 52701.846 +/- nan ESS: 1.0 logL min: 40996.176 logL median: 51729.047 logL max: 52718.339
+03-26 19:04 nessai INFO    : Log-likelihood threshold: 51768.734709090044
+03-26 19:04 nessai INFO    : Training next proposal with 1578 samples
+03-26 19:04 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:04 nessai INFO    : Current n samples: 3571
+03-26 19:04 nessai INFO    : Stopping criteria (['ratio']): [2.1509375433888636] - Tolerance: [0.0]
+03-26 19:04 nessai INFO    : Update 10 - log Z: 52700.790 +/- nan ESS: 1.0 logL min: 43560.574 logL median: 51915.531 logL max: 52718.339
+03-26 19:04 nessai INFO    : Log-likelihood threshold: 51940.464245375566
+03-26 19:04 nessai INFO    : Training next proposal with 1654 samples
+03-26 19:04 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:04 nessai INFO    : Current n samples: 3625
+03-26 19:04 nessai INFO    : Stopping criteria (['ratio']): [2.2153493821897428] - Tolerance: [0.0]
+03-26 19:04 nessai INFO    : Update 11 - log Z: 52699.010 +/- nan ESS: 1.0 logL min: 12059.696 logL median: 52070.031 logL max: 52718.339
+03-26 19:04 nessai INFO    : Log-likelihood threshold: 52090.58896256126
+03-26 19:04 nessai INFO    : Training next proposal with 1718 samples
+03-26 19:04 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:04 nessai INFO    : Current n samples: 3655
+03-26 19:04 nessai INFO    : Stopping criteria (['ratio']): [2.258568207573262] - Tolerance: [0.0]
+03-26 19:04 nessai INFO    : Update 12 - log Z: 52697.828 +/- nan ESS: 1.0 logL min: 44852.377 logL median: 52208.848 logL max: 52718.339
+03-26 19:04 nessai INFO    : Log-likelihood threshold: 52224.14572266424
+03-26 19:04 nessai INFO    : Training next proposal with 1642 samples
+03-26 19:05 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:05 nessai INFO    : Current n samples: 3689
+03-26 19:05 nessai INFO    : Stopping criteria (['ratio']): [2.3577455041668145] - Tolerance: [0.0]
+03-26 19:05 nessai INFO    : Update 13 - log Z: 52863.505 +/- nan ESS: 1.0 logL min: 47714.927 logL median: 52314.851 logL max: 52884.662
+03-26 19:05 nessai INFO    : Log-likelihood threshold: 52327.82339629329
+03-26 19:05 nessai INFO    : Training next proposal with 1666 samples
+03-26 19:05 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:05 nessai INFO    : Current n samples: 3703
+03-26 19:05 nessai INFO    : Stopping criteria (['ratio']): [2.4024054282781435] - Tolerance: [0.0]
+03-26 19:05 nessai INFO    : Update 14 - log Z: 52865.222 +/- nan ESS: 1.1 logL min: 48834.380 logL median: 52411.925 logL max: 52885.583
+03-26 19:05 nessai INFO    : Log-likelihood threshold: 52423.42914362681
+03-26 19:05 nessai INFO    : Training next proposal with 1733 samples
+03-26 19:05 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:05 nessai INFO    : Current n samples: 3722
+03-26 19:05 nessai INFO    : Stopping criteria (['ratio']): [2.4472709024339565] - Tolerance: [0.0]
+03-26 19:05 nessai INFO    : Update 15 - log Z: 52913.126 +/- nan ESS: 1.0 logL min: 49043.584 logL median: 52500.847 logL max: 52933.282
+03-26 19:05 nessai INFO    : Log-likelihood threshold: 52510.49317277644
+03-26 19:05 nessai INFO    : Training next proposal with 1723 samples
+03-26 19:05 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:05 nessai INFO    : Current n samples: 3729
+03-26 19:05 nessai INFO    : Stopping criteria (['ratio']): [2.4736370575265028] - Tolerance: [0.0]
+03-26 19:05 nessai INFO    : Update 16 - log Z: 52911.517 +/- nan ESS: 1.0 logL min: 50374.488 logL median: 52586.117 logL max: 52933.282
+03-26 19:05 nessai INFO    : Log-likelihood threshold: 52593.47698023592
+03-26 19:05 nessai INFO    : Training next proposal with 1679 samples
+03-26 19:05 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:05 nessai INFO    : Current n samples: 3745
+03-26 19:05 nessai INFO    : Stopping criteria (['ratio']): [2.54734212072799] - Tolerance: [0.0]
+03-26 19:05 nessai INFO    : Update 17 - log Z: 52911.133 +/- nan ESS: 1.3 logL min: 50183.120 logL median: 52651.986 logL max: 52933.513
+03-26 19:05 nessai INFO    : Log-likelihood threshold: 52657.738505981295
+03-26 19:05 nessai INFO    : Training next proposal with 1792 samples
+03-26 19:06 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:06 nessai INFO    : Current n samples: 3765
+03-26 19:06 nessai INFO    : Stopping criteria (['ratio']): [2.5932716744646314] - Tolerance: [0.0]
+03-26 19:06 nessai INFO    : Update 18 - log Z: 52925.993 +/- nan ESS: 1.0 logL min: 50389.566 logL median: 52711.168 logL max: 52950.773
+03-26 19:06 nessai INFO    : Log-likelihood threshold: 52716.15707496305
+03-26 19:06 nessai INFO    : Training next proposal with 1739 samples
+03-26 19:06 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:06 nessai INFO    : Current n samples: 3773
+03-26 19:06 nessai INFO    : Stopping criteria (['ratio']): [2.6124153986675083] - Tolerance: [0.0]
+03-26 19:06 nessai INFO    : Update 19 - log Z: 52957.118 +/- nan ESS: 1.0 logL min: 51465.838 logL median: 52762.833 logL max: 52984.275
+03-26 19:06 nessai INFO    : Log-likelihood threshold: 52767.19439561045
+03-26 19:06 nessai INFO    : Training next proposal with 1854 samples
+03-26 19:06 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:06 nessai INFO    : Current n samples: 3784
+03-26 19:06 nessai INFO    : Stopping criteria (['ratio']): [2.6634897487820126] - Tolerance: [0.0]
+03-26 19:06 nessai INFO    : Update 20 - log Z: 52956.191 +/- nan ESS: 1.0 logL min: 51022.414 logL median: 52807.817 logL max: 52984.275
+03-26 19:06 nessai INFO    : Log-likelihood threshold: 52811.16635487605
+03-26 19:06 nessai INFO    : Training next proposal with 1820 samples
+03-26 19:06 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:06 nessai INFO    : Current n samples: 3788
+03-26 19:06 nessai INFO    : Stopping criteria (['ratio']): [2.696916756372957] - Tolerance: [0.0]
+03-26 19:06 nessai INFO    : Update 21 - log Z: 52963.597 +/- nan ESS: 1.4 logL min: 51651.832 logL median: 52846.255 logL max: 52991.979
+03-26 19:06 nessai INFO    : Log-likelihood threshold: 52849.047195854415
+03-26 19:06 nessai INFO    : Training next proposal with 1789 samples
+03-26 19:06 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:06 nessai INFO    : Current n samples: 3795
+03-26 19:06 nessai INFO    : Stopping criteria (['ratio']): [2.757700109745201] - Tolerance: [0.0]
+03-26 19:06 nessai INFO    : Update 22 - log Z: 52971.630 +/- nan ESS: 1.0 logL min: 51719.075 logL median: 52877.061 logL max: 53003.641
+03-26 19:06 nessai INFO    : Log-likelihood threshold: 52879.311215567206
+03-26 19:06 nessai INFO    : Training next proposal with 1808 samples
+03-26 19:07 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:07 nessai INFO    : Current n samples: 3799
+03-26 19:07 nessai INFO    : Stopping criteria (['ratio']): [2.7822350992864813] - Tolerance: [0.0]
+03-26 19:07 nessai INFO    : Update 23 - log Z: 52985.385 +/- nan ESS: 2.0 logL min: 51771.664 logL median: 52904.528 logL max: 53018.099
+03-26 19:07 nessai INFO    : Log-likelihood threshold: 52906.81458899661
+03-26 19:07 nessai INFO    : Training next proposal with 1817 samples
+03-26 19:07 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:07 nessai INFO    : Current n samples: 3801
+03-26 19:07 nessai INFO    : Stopping criteria (['ratio']): [2.810210714029381] - Tolerance: [0.0]
+03-26 19:07 nessai INFO    : Update 24 - log Z: 52985.197 +/- nan ESS: 2.3 logL min: 51860.105 logL median: 52929.448 logL max: 53018.099
+03-26 19:07 nessai INFO    : Log-likelihood threshold: 52931.43898751628
+03-26 19:07 nessai INFO    : Training next proposal with 1780 samples
+03-26 19:07 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:07 nessai INFO    : Current n samples: 3805
+03-26 19:07 nessai INFO    : Stopping criteria (['ratio']): [2.833046691273921] - Tolerance: [0.0]
+03-26 19:07 nessai INFO    : Update 25 - log Z: 52998.455 +/- nan ESS: 1.2 logL min: 51727.615 logL median: 52950.412 logL max: 53032.560
+03-26 19:07 nessai INFO    : Log-likelihood threshold: 52951.91968627955
+03-26 19:07 nessai INFO    : Training next proposal with 1826 samples
+03-26 19:07 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:07 nessai INFO    : Current n samples: 3810
+03-26 19:07 nessai INFO    : Stopping criteria (['ratio']): [2.8958869385824073] - Tolerance: [0.0]
+03-26 19:07 nessai INFO    : Update 26 - log Z: 52997.336 +/- nan ESS: 1.4 logL min: 52381.198 logL median: 52967.529 logL max: 53032.560
+03-26 19:07 nessai INFO    : Log-likelihood threshold: 52968.79970090693
+03-26 19:07 nessai INFO    : Training next proposal with 1892 samples
+03-26 19:07 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:08 nessai INFO    : Current n samples: 3813
+03-26 19:08 nessai INFO    : Stopping criteria (['ratio']): [2.9329193783851224] - Tolerance: [0.0]
+03-26 19:08 nessai INFO    : Update 27 - log Z: 52997.113 +/- nan ESS: 3.0 logL min: 52789.125 logL median: 52981.251 logL max: 53034.944
+03-26 19:08 nessai INFO    : Log-likelihood threshold: 52982.30704223328
+03-26 19:08 nessai INFO    : Training next proposal with 1946 samples
+03-26 19:08 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:08 nessai INFO    : Current n samples: 3819
+03-26 19:08 nessai INFO    : Stopping criteria (['ratio']): [2.948530672074412] - Tolerance: [0.0]
+03-26 19:08 nessai INFO    : Update 28 - log Z: 53005.515 +/- nan ESS: 1.2 logL min: 52659.648 logL median: 52993.157 logL max: 53044.721
+03-26 19:08 nessai INFO    : Log-likelihood threshold: 52993.85397681579
+03-26 19:08 nessai INFO    : Training next proposal with 1934 samples
+03-26 19:08 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:08 nessai INFO    : Current n samples: 3828
+03-26 19:08 nessai INFO    : Stopping criteria (['ratio']): [2.9934767546365038] - Tolerance: [0.0]
+03-26 19:08 nessai INFO    : Update 29 - log Z: 53004.760 +/- nan ESS: 2.4 logL min: 52297.402 logL median: 53003.125 logL max: 53044.767
+03-26 19:08 nessai INFO    : Log-likelihood threshold: 53003.87898702528
+03-26 19:08 nessai INFO    : Training next proposal with 1858 samples
+03-26 19:08 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:08 nessai INFO    : Current n samples: 3833
+03-26 19:08 nessai INFO    : Stopping criteria (['ratio']): [3.020089005054615] - Tolerance: [0.0]
+03-26 19:08 nessai INFO    : Update 30 - log Z: 53004.669 +/- nan ESS: 8.9 logL min: 52850.478 logL median: 53011.769 logL max: 53045.073
+03-26 19:08 nessai INFO    : Log-likelihood threshold: 53012.29482954673
+03-26 19:08 nessai INFO    : Training next proposal with 1898 samples
+03-26 19:08 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:08 nessai INFO    : Current n samples: 3840
+03-26 19:08 nessai INFO    : Stopping criteria (['ratio']): [3.029947353999887] - Tolerance: [0.0]
+03-26 19:08 nessai INFO    : Update 31 - log Z: 53005.936 +/- nan ESS: 3.4 logL min: 52849.458 logL median: 53019.359 logL max: 53048.306
+03-26 19:08 nessai INFO    : Log-likelihood threshold: 53019.888861959495
+03-26 19:08 nessai INFO    : Training next proposal with 1852 samples
+03-26 19:09 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:09 nessai INFO    : Current n samples: 3842
+03-26 19:09 nessai INFO    : Stopping criteria (['ratio']): [3.052925288626284] - Tolerance: [0.0]
+03-26 19:09 nessai INFO    : Update 32 - log Z: 53005.847 +/- nan ESS: 11.3 logL min: 52950.662 logL median: 53026.234 logL max: 53049.262
+03-26 19:09 nessai INFO    : Log-likelihood threshold: 53026.6166134556
+03-26 19:09 nessai INFO    : Training next proposal with 1851 samples
+03-26 19:09 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:09 nessai INFO    : Current n samples: 3845
+03-26 19:09 nessai INFO    : Stopping criteria (['ratio']): [3.076322737724695] - Tolerance: [0.0]
+03-26 19:09 nessai INFO    : Update 33 - log Z: 53009.214 +/- nan ESS: 3.2 logL min: 52978.188 logL median: 53032.098 logL max: 53055.334
+03-26 19:09 nessai INFO    : Log-likelihood threshold: 53032.41409155846
+03-26 19:09 nessai INFO    : Training next proposal with 1904 samples
+03-26 19:09 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:09 nessai INFO    : Current n samples: 3849
+03-26 19:09 nessai INFO    : Stopping criteria (['ratio']): [3.081530381925404] - Tolerance: [0.0]
+03-26 19:09 nessai INFO    : Update 34 - log Z: 53008.708 +/- nan ESS: 10.3 logL min: 52987.937 logL median: 53037.200 logL max: 53055.508
+03-26 19:09 nessai INFO    : Log-likelihood threshold: 53037.434115704295
+03-26 19:09 nessai INFO    : Training next proposal with 1876 samples
+03-26 19:09 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:09 nessai INFO    : Current n samples: 3854
+03-26 19:09 nessai INFO    : Stopping criteria (['ratio']): [3.1097542769130087] - Tolerance: [0.0]
+03-26 19:09 nessai INFO    : Update 35 - log Z: 53008.620 +/- nan ESS: 51.4 logL min: 53004.438 logL median: 53041.492 logL max: 53056.159
+03-26 19:09 nessai INFO    : Log-likelihood threshold: 53041.71425009823
+03-26 19:09 nessai INFO    : Training next proposal with 1871 samples
+03-26 19:09 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:10 nessai INFO    : Current n samples: 3857
+03-26 19:10 nessai INFO    : Stopping criteria (['ratio']): [3.1272536079995916] - Tolerance: [0.0]
+03-26 19:10 nessai INFO    : Update 36 - log Z: 53008.715 +/- nan ESS: 91.7 logL min: 53007.764 logL median: 53045.164 logL max: 53057.818
+03-26 19:10 nessai INFO    : Log-likelihood threshold: 53045.320409496526
+03-26 19:10 nessai INFO    : Training next proposal with 1807 samples
+03-26 19:10 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:10 nessai INFO    : Current n samples: 3860
+03-26 19:10 nessai INFO    : Stopping criteria (['ratio']): [3.1674702519230777] - Tolerance: [0.0]
+03-26 19:10 nessai INFO    : Update 37 - log Z: 53008.573 +/- nan ESS: 505.9 logL min: 53018.428 logL median: 53047.960 logL max: 53057.973
+03-26 19:10 nessai INFO    : Log-likelihood threshold: 53048.07825375976
+03-26 19:10 nessai INFO    : Training next proposal with 1847 samples
+03-26 19:10 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:10 nessai INFO    : Current n samples: 3864
+03-26 19:10 nessai INFO    : Stopping criteria (['ratio']): [3.1307815399341052] - Tolerance: [0.0]
+03-26 19:10 nessai INFO    : Update 38 - log Z: 53008.618 +/- nan ESS: 1348.4 logL min: 53025.527 logL median: 53050.194 logL max: 53058.244
+03-26 19:10 nessai INFO    : Log-likelihood threshold: 53050.3018549346
+03-26 19:10 nessai INFO    : Training next proposal with 1829 samples
+03-26 19:10 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:10 nessai INFO    : Current n samples: 3868
+03-26 19:10 nessai INFO    : Stopping criteria (['ratio']): [2.9947553733654786] - Tolerance: [0.0]
+03-26 19:10 nessai INFO    : Update 39 - log Z: 53008.616 +/- nan ESS: 3044.3 logL min: 53035.261 logL median: 53052.144 logL max: 53059.265
+03-26 19:10 nessai INFO    : Log-likelihood threshold: 53052.23377358315
+03-26 19:10 nessai INFO    : Training next proposal with 1873 samples
+03-26 19:10 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:11 nessai INFO    : Current n samples: 3873
+03-26 19:11 nessai INFO    : Stopping criteria (['ratio']): [2.721738354630361] - Tolerance: [0.0]
+03-26 19:11 nessai INFO    : Update 40 - log Z: 53008.611 +/- nan ESS: 5427.7 logL min: 53040.579 logL median: 53053.634 logL max: 53059.265
+03-26 19:11 nessai INFO    : Log-likelihood threshold: 53053.70836468451
+03-26 19:11 nessai INFO    : Training next proposal with 1856 samples
+03-26 19:11 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:11 nessai INFO    : Current n samples: 3878
+03-26 19:11 nessai INFO    : Stopping criteria (['ratio']): [2.297370176660479] - Tolerance: [0.0]
+03-26 19:11 nessai INFO    : Update 41 - log Z: 53008.615 +/- nan ESS: 7564.2 logL min: 53044.718 logL median: 53054.858 logL max: 53059.265
+03-26 19:11 nessai INFO    : Log-likelihood threshold: 53054.91339032444
+03-26 19:11 nessai INFO    : Training next proposal with 1807 samples
+03-26 19:11 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:11 nessai INFO    : Current n samples: 3881
+03-26 19:11 nessai INFO    : Stopping criteria (['ratio']): [1.69349088936724] - Tolerance: [0.0]
+03-26 19:11 nessai INFO    : Update 42 - log Z: 53008.613 +/- nan ESS: 9023.6 logL min: 53042.429 logL median: 53055.885 logL max: 53059.265
+03-26 19:11 nessai INFO    : Log-likelihood threshold: 53055.933391990184
+03-26 19:11 nessai INFO    : Training next proposal with 1803 samples
+03-26 19:11 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:11 nessai INFO    : Current n samples: 3887
+03-26 19:11 nessai INFO    : Stopping criteria (['ratio']): [0.9333088752900949] - Tolerance: [0.0]
+03-26 19:11 nessai INFO    : Update 43 - log Z: 53008.616 +/- nan ESS: 9837.4 logL min: 53050.995 logL median: 53056.713 logL max: 53059.677
+03-26 19:11 nessai INFO    : Log-likelihood threshold: 53056.738629110536
+03-26 19:11 nessai INFO    : Training next proposal with 1802 samples
+03-26 19:11 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:11 nessai INFO    : Current n samples: 3891
+03-26 19:11 nessai INFO    : Stopping criteria (['ratio']): [0.03637568238627864] - Tolerance: [0.0]
+03-26 19:11 nessai INFO    : Update 44 - log Z: 53008.615 +/- nan ESS: 10079.6 logL min: 53052.233 logL median: 53057.385 logL max: 53059.897
+03-26 19:12 nessai INFO    : Log-likelihood threshold: 53057.41095836146
+03-26 19:12 nessai INFO    : Training next proposal with 1830 samples
+03-26 19:12 nessai INFO    : Drawing 2000 new samples from the new proposal
+03-26 19:12 nessai INFO    : Current n samples: 3893
+03-26 19:12 nessai INFO    : Stopping criteria (['ratio']): [-1.0252715158785577] - Tolerance: [0.0]
+03-26 19:12 nessai INFO    : Update 45 - log Z: 53008.614 +/- nan ESS: 10157.3 logL min: 53052.121 logL median: 53057.922 logL max: 53059.897
+03-26 19:12 nessai INFO    : Finished nested sampling loop after 46 iterations with ['ratio'] = [-1.0252715158785577]
+03-26 19:12 nessai INFO    : Finalising
+03-26 19:12 nessai INFO    : Final log Z: 53008.614 +/- nan
+03-26 19:12 nessai INFO    : Final KL divergence: -51973.355
+03-26 19:12 nessai INFO    : Final ESS: 10157.261
+03-26 19:12 nessai INFO    : Checkpointing nested sampling
+03-26 19:12 nessai INFO    : Training time: 0:01:54.966511
+03-26 19:12 nessai INFO    : Draw samples time: 0:06:03.198295
+03-26 19:12 nessai INFO    : Add and update samples time: 0:06:14.594936
+03-26 19:12 nessai INFO    : Log-likelihood time: 0:06:01.402079
+03-26 19:12 nessai INFO    : Total sampling time: 0:09:53.322995
+03-26 19:12 nessai INFO    : Total likelihood evaluations: 188000
+03-26 19:12 nessai INFO    : Starting post processing
+03-26 19:12 nessai INFO    : Computing posterior samples
+03-26 19:12 nessai INFO    : Effective sample size: 10157.3
+03-26 19:12 nessai INFO    : Producing posterior samples using multinomial resampling
+03-26 19:12 nessai INFO    : Produced 10157 posterior samples.
+03-26 19:12 nessai INFO    : Returned 10157 posterior samples
+03-26 19:12 nessai INFO    : Starting to close worker pool.
+03-26 19:12 nessai INFO    : Finished closing worker pool.
