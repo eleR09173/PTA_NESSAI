@@ -45,16 +45,15 @@ from multiprocessing import Pool #PARALLELIZATION
 from nessai.utils.multiprocessing import initialise_pool_variables #PARALLELIZATION
 
 
-# 
-import argparse
+# import argparse to set the following Nessai parameters in every run
 parser = argparse.ArgumentParser()
-parser.add_argument("--nlive")
-parser.add_argument("--n_blocks")
-parser.add_argument("--n_layers")
-parser.add_argument("--n_neurons")
-parser.add_argument("--patience")
-parser.add_argument("--pytorch_threads")
-parser.add_argument("--n_pool")
+parser.add_argument("--nlive", type=int, required=True)
+parser.add_argument("--n_blocks", type=int, required=True)
+parser.add_argument("--n_layers", type=int, required=True)
+parser.add_argument("--n_neurons", type=int, required=True)
+parser.add_argument("--patience", type=int, required=True)
+parser.add_argument("--pytorch_threads", type=int, required=True)
+parser.add_argument("--n_pool", type=int, required=True)
 args = parser.parse_args()
 
 
@@ -266,8 +265,13 @@ ptaM = PTA(psr_multi)
 ####################################################### SAMPLING WITH NESSAI ###################################################################
 
 
+# set up the outdir for every run
+run_name = f"SimDR2newAllPSR-{args.nlive}-{args.n_blocks}-{args.n_layers}-{args.n_neurons}-{args.patience}-{args.pytorch_threads}-{args.n_pool}"
+output = os.path.join(homedir, "SimulatedPSR", "outdir", "DR2newAllPSR", run_name)
+os.makedirs(output, exist_ok=True)
+print(f"Output directory: {output}")
 
-output = os.path.join(homedir, "SimulatedPSR", "outdir", "DR2newAllPSR")
+# put the log file in the correct outdir for every run
 logger = setup_logger(output=output)
 
 
@@ -341,9 +345,9 @@ class BaseNessaiModel(Model):
 
 
 flow_config = dict(
-                       n_blocks=args.nblocks, 
+                       n_blocks=args.n_blocks, 
                        n_layers=args.n_layers, 
-                       n_neurons=args.neurons,
+                       n_neurons=args.n_neurons,
                        ftype="RealNVP"
                     )
 #QUESTO L'HO PRESO DALLA CONFIGURAZIONE DI EGGBOX  
