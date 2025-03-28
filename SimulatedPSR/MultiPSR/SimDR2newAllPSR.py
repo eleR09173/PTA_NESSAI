@@ -46,6 +46,7 @@ from nessai.utils.multiprocessing import initialise_pool_variables #PARALLELIZAT
 
 
 # import argparse to set the following Nessai parameters in every run
+import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("--nlive", type=int, required=True)
 parser.add_argument("--n_blocks", type=int, required=True)
