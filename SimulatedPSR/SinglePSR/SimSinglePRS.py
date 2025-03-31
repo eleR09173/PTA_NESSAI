@@ -325,7 +325,7 @@ flow_config = dict(
                     )
 #QUESTO L'HO PRESO DALLA CONFIGURAZIONE DI EGGBOX  
 training_config = dict(
-    patience=10 # is the number of iterations with no improvement in the validation loss to wait before stopping training early. DEFAULT VALUE = 20
+    patience=20 # is the number of iterations with no improvement in the validation loss to wait before stopping training early. DEFAULT VALUE = 20
 )
   
     
@@ -351,8 +351,8 @@ fs = FlowSampler(
     importance_nested_sampler=True,  # Use the importance nested sampler
     # draw_constant=True,  # Draw a constant number of samples (2000) QUESTO L'HO TOLTO PERCHE' A PARITA' DEGLI ALTRI PARAMETRI FA TROPPO POCHI POSTERIOR
     ###################PARALLELIZATION########################
-    pytorch_threads=2,  # Allow pytorch to use n threads; pytorch_threads=None USA IL NUMERO MAX DISPONIBILE
-    n_pool=2,  # k threads for evaluating the likelihood
+    pytorch_threads=4,  # Allow pytorch to use n threads; pytorch_threads=None USA IL NUMERO MAX DISPONIBILE
+    n_pool=4,  # k threads for evaluating the likelihood
     ###########################################################
 )
 

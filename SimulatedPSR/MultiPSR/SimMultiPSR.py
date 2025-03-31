@@ -125,9 +125,7 @@ def add_time_corr_signal(psr, A, gamma, components=10, tspan=None, seed=None, id
     
     
 
-pulsars = ["J0030+0451", "J1744-1134", "J1909-3744"
-           #, "J0613-0200", "J1024-0719", "J1455-3330"
-           ]  # Updated to include three pulsars. To change the number of pulsar, just add here pulsars names from PTA_NESSAI/data/EPTA_DR2/DR2new. PULSAR NUOVE AGGIUNTE IN CODA, I.E. 3PSR SONO LE PRIME 3 ETC.. 
+pulsars = ["J0030+0451", "J1744-1134", "J1909-3744"]  # Updated to include three pulsars from PTA_NESSAI/data/EPTA_DR2/DR2new
 
 cadence = 5.0  # days
 start_mjd, end_mjd = 52000, 59000
@@ -354,7 +352,7 @@ fs = FlowSampler(
     # min_iteration=60, # SE LO STATE PLOT CONVERGE, LASCIARLO COMMENTATO (-> FISSA IN AUTOMATICO IL NUMERO MINIMO DI ITERAZONI) ALTRIMENTI AUMENTARLO FINCHE' LO STATE PLOT NON CONVERGE
     output=output,
     resume=False,
-    seed=1451, #HO MESSO LO STESSO SEED DEL FILE rosenbrock.py senza ins
+    seed=1451, #HO MESSO LO STESSO SEED 
     importance_nested_sampler=True,  # Use the importance nested sampler
     # draw_constant=True,  # Draw a constant number of samples (2000) QUESTO L'HO TOLTO PERCHE' A PARITA' DEGLI ALTRI PARAMETRI FA TROPPO POCHI POSTERIOR
     ###################PARALLELIZATION########################
