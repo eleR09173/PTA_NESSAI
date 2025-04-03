@@ -2,7 +2,7 @@
 
 # Standard library
 import os
-homedir = os.path.abspath("PTA_NESSAI")
+# homedir = os.path.abspath("PTA_NESSAI")
 
 # Scientific computing and linear algebra
 import numpy as np
@@ -55,6 +55,11 @@ parser.add_argument("--n_neurons", type=int, required=True)
 parser.add_argument("--patience", type=int, required=True)
 parser.add_argument("--pytorch_threads", type=int, required=True)
 parser.add_argument("--n_pool", type=int, required=True)
+
+parser.add_argument("--data_dir", type=str, required=True)
+parser.add_argument("--homedir", type=str, default=os.path.abspath("PTA_NESSAI"))
+
+
 args = parser.parse_args()
 
 
@@ -134,12 +139,13 @@ def add_time_corr_signal(psr, A, gamma, components=10, tspan=None, seed=None, id
     
     
     
-    ############################################################# SIMULATE MULTI PULSAR DATA ########################################################################################
+############################################################# SIMULATE MULTI PULSAR DATA ########################################################################################
     
     
 ######################################################################### THE FOLLOWING SIMULATE ALL 25 PULSARS IN DR2new
 # data dir
-data_dir = os.path.join(homedir, "data", "EPTA_DR2", "DR2new")
+# data_dir = os.path.join(homedir, "data", "EPTA_DR2", "DR2new")
+data_dir=args.data_dir
 
 # for to span DR2new
 pulsars = [d for d in os.listdir(data_dir) if os.path.isdir(os.path.join(data_dir, d))]
@@ -156,7 +162,7 @@ freqs = np.random.choice([500, 900, 1400], num_toas)  # MHz
 # Create pulsars
 pulsar_objects = {}
 for psrname in pulsars:
-    parfile = os.path.abspath(os.path.join(homedir, "data", "EPTA_DR2", "DR2new", psrname, f"{psrname}.par"))
+    parfile = os.path.abspath(os.path.join(data_dir, psrname, f"{psrname}.par"))
     pulsar_objects[psrname] = LTsim.fakepulsar(parfile, obstimes=toas, toaerr=toaerrs, freq=freqs)
 
 # Add gravitational wave background (GWB) and save residuals
@@ -265,7 +271,7 @@ ptaM = PTA(psr_multi)
 
 ####################################################### SAMPLING WITH NESSAI ###################################################################
 
-
+homedir=args.homedir
 # set up the outdir for every run
 run_name = f"SimDR2newAllPSR-{args.nlive}-{args.n_blocks}-{args.n_layers}-{args.n_neurons}-{args.patience}-{args.pytorch_threads}-{args.n_pool}"
 output = os.path.join(homedir, "SimulatedPSR", "outdir", "DR2newAllPSR", run_name)
