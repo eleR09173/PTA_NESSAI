@@ -55,6 +55,9 @@ parser.add_argument("--n_neurons", type=int, required=True)
 parser.add_argument("--patience", type=int, required=True)
 parser.add_argument("--pytorch_threads", type=int, required=True)
 parser.add_argument("--n_pool", type=int, required=True)
+# min iteration is optional: if not set for the run, Nessai uses its autoiteration criterium
+parser.add_argument("--min_iteration", type=int, default=None)
+
 
 
 parser.add_argument("--data_dir", type=str, required=True)
@@ -273,8 +276,13 @@ ptaM = PTA(psr_multi)
 ####################################################### SAMPLING WITH NESSAI ###################################################################
 
 homedir=args.homedir
-# set up the outdir for every run
+# Set up the outdir name for every run
 run_name = f"SimDR2newAllPSR-{args.nlive}-{args.n_blocks}-{args.n_layers}-{args.n_neurons}-{args.patience}-{args.pytorch_threads}-{args.n_pool}"
+# Modify outdir name if min_iteration is set or not
+if args.min_iteration is not None:
+    run_name += f"-{args.min_iteration}"
+else:
+    run_name += "-autoiter"
 output = os.path.join(homedir, "SimulatedPSR", "outdir", "DR2newAllPSR", run_name)
 os.makedirs(output, exist_ok=True)
 print(f"Output directory: {output}")
@@ -372,25 +380,31 @@ logger.warning("Running nessai with n_pool")
 ###########################################
 
 
-# The FlowSampler object is used to managed the sampling as has more
-# configuration options
-# Note the importance nested sampler has different settings to the standard
-# sampler
-fs = FlowSampler(
-   BaseNessaiModel(),
-    # nlive=25000,
-    nlive = args.nlive,
-    # min_iteration=60, # SE LO STATE PLOT CONVERGE, LASCIARLO COMMENTATO (-> FISSA IN AUTOMATICO IL NUMERO MINIMO DI ITERAZONI) ALTRIMENTI AUMENTARLO FINCHE' LO STATE PLOT NON CONVERGE
-    output=output,
-    resume=False,
-    seed=1451, #HO MESSO LO STESSO SEED DEL FILE rosenbrock.py senza ins
-    importance_nested_sampler=True,  # Use the importance nested sampler
+# The FlowSampler object is used to managed the sampling as has more configuration options
+# Note the importance nested sampler has different settings to the standard sampler
+# Define the dictionary containing the keyword arguments of FlowSampler
+fs_args = {
+    "model": BaseNessaiModel(),
+    "nlive": args.nlive,
+    "output": output,
+    "resume": False,
+    "seed": 1451,
+    "importance_nested_sampler": True,
     # draw_constant=True,  # Draw a constant number of samples (2000) QUESTO L'HO TOLTO PERCHE' A PARITA' DEGLI ALTRI PARAMETRI FA TROPPO POCHI POSTERIOR
     ###################PARALLELIZATION########################
-    pytorch_threads=args.pytorch_threads,  # Allow pytorch to use n threads; pytorch_threads=None USA IL NUMERO MAX DISPONIBILE
-    n_pool=args.n_pool,  # k threads for evaluating the likelihood
+    "pytorch_threads": args.pytorch_threads,
+    "n_pool": args.n_pool,
     ###########################################################
-)
+}
+
+# If args.min_iteration is set, add the "min_iteration" element to the  dictionary
+if args.min_iteration is not None:
+    fs_args["min_iteration"] = args.min_iteration
+    
+# Pass to FlowSampler the keywords arguments **fs_args
+fs = FlowSampler(**fs_args)
+
+
 
 # and go!
 
