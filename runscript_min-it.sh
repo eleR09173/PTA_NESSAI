@@ -5,7 +5,7 @@
 function runscript() {
     dt=$(date '+%Y-%m-%dT%T.%zZ')
 
-    # data_name=$(basename ${9}) # this is to add the last part of data_dir in the rundir name
+    data_name=$(basename ${9}) # this is to add the last part of data_dir in the rundir name
  
     # Check if min_iteration is set or not. This is for the dir name
     if [ -n "${10}" ]; then
@@ -14,8 +14,8 @@ function runscript() {
         iter_tag="autoiter"
     fi
 
-    rundir=run_${dt}_${2}_${3}_${4}_${5}_${6}_${7}_${8}_${iter_tag} #remember that this way data_dir is not in the dir name. So if we accidentally run with the same parameters but different dataset, it will overwrite
-    # rundir=run_${dt}_${2}_${3}_${4}_${5}_${6}_${7}_${8}_${data_name}_${iter_tag} # this way the last part of data_dir is in the rundir name
+    # rundir=run_${dt}_${2}_${3}_${4}_${5}_${6}_${7}_${8}_${iter_tag} #remember that this way data_dir is not in the dir name. So if we accidentally run with the same parameters but different dataset, it will overwrite
+    rundir=run_${dt}_${2}_${3}_${4}_${5}_${6}_${7}_${8}_${data_name}_${iter_tag} # this way the last part of data_dir is in the rundir name
     mkdir -p ${rundir}
     cd ${rundir}
 
@@ -26,7 +26,10 @@ function runscript() {
     fi
 
     echo "Running: $cmd"
+    date '+%Y-%m-%dT%T.%zZ'
     eval $cmd
+    date '+%Y-%m-%dT%T.%zZ'
+
 }
 
  
@@ -34,12 +37,15 @@ homedir="/root/PTA_NESSAI"
 cd ${homedir}
 # runscript to select every time
 # without min_iteration
-runscript ${homedir}/SimulatedPSR/MultiPSR/SimDR2newAllPSR_min-it.py 25000 10 10 40 20 6 6 ${homedir}/data/EPTA_DR2/DR2new
+# runscript ${homedir}/SimulatedPSR/MultiPSR/SimDR2newAllPSR_min-it.py 25000 10 10 40 20 6 6 ${homedir}/data/EPTA_DR2/DR2new
+# NON SERVE AVERE DUE runscript DIVERSI. USO QUELLO CHE MIN_ITER E I $. DA TERMINALE METTO I NUMERI E LO SCRIPT LI METTE AL POSTO GIUSTO
 
 # with min_iteration set
-runscript ${homedir}/SimulatedPSR/MultiPSR/SimDR2newAllPSR_min-it.py 25000 10 10 40 20 6 6 ${homedir}/data/EPTA_DR2/DR2new 80
+runscript ${homedir}/SimulatedPSR/MultiPSR/SimDR2newAllPSR_min-it.py $1 $2 $3 $4 $5 $6 $7 ${homedir}/data/EPTA_DR2/DR2new $8
 
 
+# per la work station di Golam
+# homedir="/homes/eleonora.villa/PTA-with-NessAI/PTA_NESSAI
 ###################################################### INTERACTIVE VERSION #####################################################################################
 # #!/bin/bash
 

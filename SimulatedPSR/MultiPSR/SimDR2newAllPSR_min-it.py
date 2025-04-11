@@ -57,13 +57,8 @@ parser.add_argument("--pytorch_threads", type=int, required=True)
 parser.add_argument("--n_pool", type=int, required=True)
 # min iteration is optional: if not set for the run, Nessai uses its autoiteration criterium
 parser.add_argument("--min_iteration", type=int, default=None)
-
-
-
 parser.add_argument("--data_dir", type=str, required=True)
 parser.add_argument("--homedir", type=str, default=os.path.abspath("PTA_NESSAI"))
-
-
 args = parser.parse_args()
 
 
