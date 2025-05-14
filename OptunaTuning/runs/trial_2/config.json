@@ -1,0 +1,14 @@
+{
+    "nlive": 500,
+    "flow_config": {
+        "n_blocks": 10,
+        "n_layers": 6,
+        "n_neurons": 31,
+        "ftype": "RealNVP"
+    },
+    "seed": 2,
+    "n_pool": 1,
+    "eps": null,
+    "torch_dtype": "torch.float32",
+    "importance_sampler": true
+}
